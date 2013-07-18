@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="utf-8">
+    <title>MyNotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyNotes">
+    <meta name="author" content="huanghuiquan">
+
+    <!-- styles -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">   <!-- common styles -->
+    <link href="../css/personal.css" rel="stylesheet">   <!-- common styles -->
+
+    <!-- js -->
+    <script type="text/javascript" src="../javascript/lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../javascript/common/checkLogin.js"></script>
+    <script type="text/javascript" src="../javascript/common/Paging.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="wrap">
+    <!-- Nav -->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <ul class="nav pull-right">
+                </ul>
+                <a class="brand" href="#">MyNotes</a> <!-- logo -->
+                <div class="nav-collapse collapse">
+                    <ul id="nav" class="nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="hotResources.html">热门资源</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div><!-- /Nav -->
+
+    <!-- placeholder for 60px -->
+    <div class="push"></div>
+
+    <!-- container -->
+    <div class="container" >
+        <div class="row">
+            <div class="span2 leftside">
+                <ul class="nav nav-list">
+                    <li><a href="myNotes.html">我的笔记</a></li>
+                    <li class="active"><a href="myComment.html">我的评论</a></li>
+                    <li><a href="friendsList.html">好友列表</a></li>
+                    <li><a href="personalInfo.html">个人资料</a></li>
+                </ul>
+            </div>
+            <div class="span10 rightside">
+                <!-- ToDo: 4 parts:
+                我的评论
+                -->
+                <div class="myComments">
+                    <div class="_title">
+                        <h2 >我的评论</h2>
+                        <hr />
+                    </div>
+                    <ul class="item-list">
+                        <!-- <li>
+                            <div class="pic">
+                                <a href="http://product.dangdang.com/main/product.aspx?product_id=22484707"  >
+                                    <img src="../img/Jobs.jpg" alt="Jobs" />
+                                </a>
+                            </div>
+                            <div class="content">
+                                <span class="titile">
+                                    <a href="http://product.dangdang.com/main/product.aspx?product_id=22484707"  >
+                                        乔布斯自传
+                                        <br />
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    2012-12-17 18:51:10
+                                </span>
+                                <div class="note_desc">
+                                    <strong>我的评论：</strong>苹果失去了一位富有远见和创意的天才，人类失去了一位了不起的成员。
+                                    能认识并与乔布斯共事是我们大家的幸事，乔布斯的离去，令我们失去了一位亲密的朋友和灵魂导师。
+                                </div>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="http://product.dangdang.com/main/product.aspx?product_id=22484707"  >
+                                    <img src="../img/Jobs.jpg" alt="Jobs" />
+                                </a>
+                            </div>
+                            <div class="content">
+                                <span class="titile">
+                                    <a href="http://product.dangdang.com/main/product.aspx?product_id=22484707"  >
+                                        乔布斯自传
+                                        <br />
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    2012-12-17 18:51:10
+                                </span>
+                                <div class="note_desc">
+                                    <strong>我的评论：</strong>苹果失去了一位富有远见和创意的天才，人类失去了一位了不起的成员。
+                                    能认识并与乔布斯共事是我们大家的幸事，乔布斯的离去，令我们失去了一位亲密的朋友和灵魂导师。
+                                </div>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="http://product.dangdang.com/main/product.aspx?product_id=22484707"  >
+                                    <img src="../img/qingchun.jpg" alt="Jobs" />
+                                </a>
+                            </div>
+                            <div class="content">
+                                <span class="titile">
+                                    <a href="http://product.dangdang.com/main/product.aspx?product_id=22484707"  >
+                                        乔布斯自传
+                                        <br />
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    2012-12-17 18:51:10
+                                </span>
+                                <div class="note_desc">
+                                    <strong>我的评论：</strong>苹果失去了一位富有远见和创意的天才，人类失去了一位了不起的成员。
+                                    能认识并与乔布斯共事是我们大家的幸事，乔布斯的离去，令我们失去了一位亲密的朋友和灵魂导师。
+                                </div>
+                            </div>
+                            <hr />
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="pagination">
+                    <a href="javascript:void(0);" class="current prev">上一页</a>
+                    <a href="javascript:void(0);" class="next">下一页</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+    <div class="push_20"></div>
+    <div class="push"></div>
+</div>
+
+<!-- footer -->
+<div id="footer">
+    <div class="container">
+        <p>For Web2.0 Project <span class="muted">by FloatCloud Team</span></p>
+    </div>
+</div> <!-- /footer -->
+
+</body>
+</html>
+
+<!-- huang javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="../javascript/pages/myComment.js"></script>

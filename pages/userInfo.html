@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+  <head>
+    <meta charset="utf-8">
+    <title>MyNotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyNotes">
+    <meta name="author" content="huanghuiquan">
+
+    <!-- styles -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">   <!-- common styles -->
+    <link rel="stylesheet" href="../css/userInfo.css">
+    <!-- js -->
+    <script type="text/javascript" src="../javascript/lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../javascript/common/checkLogin.js"></script>
+    <script type="text/javascript" src="../javascript/common/Paging.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- Nav -->
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <ul class="nav pull-right">
+              <li>
+                <p class="welcome">Hi,XX，欢迎来到MyNotes</p>
+              </li>
+            </ul>
+            <a class="brand" href="#">MyNotes</a> <!-- logo -->
+            <div class="nav-collapse collapse">
+              <ul id="nav" class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="hotResources.html">热门资源</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div><!-- /Nav -->
+      
+      <!-- placeholder for 60px -->
+      <div class="push"></div> 
+      
+      <!-- container -->
+      <div class="container" >
+          <div class="userInfo">
+            <div class="pic">
+              <img src="../img/Jobs.jpg" alt="">
+            </div>
+            <div class="info">
+              <h2>
+                <span class="username"></span>
+                <span id="introduction" class="brief"></span>
+              </h2>
+            </div>
+          </div>
+          <hr>
+          <div class="group">
+            <h3><span class="username"></span> 参加的小组</h3>
+              <ul id="group_list" class="unstyled">
+                  <!-- <li class="group-item">
+                      <div class="pic">
+                          <img src="../img/Jobs.jpg" alt="">
+                      </div>
+                      <div class="info">
+                          <div class="title">
+                              <a href="groupDetail.html">2B青年小组</a>
+                              <span class="follow-num">100成员</span>
+                          </div>
+                          <p class="brief">2B青年，不仅仅是年龄上的青年还有心理上的青年，始终保持积极向上的心态活着。</p>
+                      </div>
+                  </li> -->
+              </ul>
+         </div>   
+         <div class="clearfix"></div>
+        <div id="comments" class="row">
+          <div class="span12">
+            <h2>该用户发表的评论</h2>
+            <hr>
+          </div>
+
+          <div class="span12">
+            <ul id="comments_list" class="unstyled">
+              <!-- <li>
+                <div class="commentator" title="Name">
+                  <a href=""><img src="../img/Jobs.jpg" alt=""></a>
+                  
+                </div>
+                <div class="comment">
+                  <p class="title">
+                    <a href="#">技术人生</a>
+                  </p>
+                  <div class="context">
+                    <p>苹果失去了一位富有远见和创意的天才，人类失去了一位了不起的成员。 能认识并与乔布斯共事是我们大家的幸事，乔布斯的离去，令我们失去了一位亲密的朋友和灵魂导师。</p>
+                    <p>苹果失去了一位富有远见和创意的天才，人类失去了一位了不起的成员。 能认识并与乔布斯共事是我们大家的幸事，乔布斯的离去，令我们失去了一位亲密的朋友和灵魂导师。</p>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div id="commentsPaging" class="pagination">
+          <a href="javascript:void(0);" class="current prev">上一页</a>
+          <a href="javascript:void(0);" class="next">下一页</a>
+        </div>
+
+        <div id="comments" class="row">
+          <div class="span12">
+            <h2>该用户创建的笔记</h2>
+            <hr>
+          </div>
+
+          <div class="span12">
+            <ul id="notes_list" class="unstyled">
+              <!-- <li>
+                <div class="commentator" title="Name">
+                  <a href=""><img src="../img/Jobs.jpg" alt=""></a>
+                  
+                </div>
+                <div class="comment">
+                  <p class="title">
+                    <a href="#">技术人生</a>
+                  </p>
+                  <div class="context">
+                    <p>苹果失去了一位富有远见和创意的天才，人类失去了一位了不起的成员。 能认识并与乔布斯共事是我们大家的幸事，乔布斯的离去，令我们失去了一位亲密的朋友和灵魂导师。</p>
+                    <p>苹果失去了一位富有远见和创意的天才，人类失去了一位了不起的成员。 能认识并与乔布斯共事是我们大家的幸事，乔布斯的离去，令我们失去了一位亲密的朋友和灵魂导师。</p>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div id="notesPaging" class="pagination">
+          <a href="javascript:void(0);" class="current prev">上一页</a>
+          <a href="javascript:void(0);" class="next">下一页</a>
+        </div>
+
+      </div> <!-- /container -->
+      <div class="push_20"></div>
+      <div class="push"></div>
+    </div>
+    
+    <!-- footer -->
+    <div id="footer">
+      <div class="container">
+        <p>For Web2.0 Project <span class="muted">by FloatCloud Team</span></p>
+      </div>
+    </div> <!-- /footer -->
+    
+  </body>
+</html>
+
+<!-- huang javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="../javascript/pages/userInfo.js"></script>

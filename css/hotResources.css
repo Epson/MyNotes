@@ -1,0 +1,60 @@
+[class*="Item"]{
+	margin-bottom: 10px;
+}
+[class*="Item"] img{
+	width: 100%;
+	height: 180px;
+}
+
+[class*="Item"] p{
+	margin:  0 auto;
+	padding:2px;
+}
+[class*="Item"] .intro{
+	position: relative;
+	margin-top: -49px;
+	background-color: rgba(216, 197, 176, 0.31);
+	width: 100%;
+	display: none;
+}
+[class*="Item"]:hover .intro{
+	display: block;
+}
+.page-header{
+	padding: 4px 0 0px 5px;
+	background: #DBD4CC;
+	box-shadow: 2px 1px 3px #A5A5A5;
+}
+.page-header{
+	font-family: Georgia;
+	text-shadow: 1px 1px 2px #5E5E5E;
+}
+.commentatorAvatar{
+	width: 20%;
+	float: left;	
+}
+.commentatorAvatar img{
+	width: 100%;
+	height: 50px;
+}
+.context{
+	margin-left: 5%;
+	float: left;
+	width: 70%;
+}
+.context:after,.commentatorAvatar:after{
+	clear: both;
+}
+[class*="Item"] a:hover{
+	background:#F8F8F8;
+	border-radius: 4px;
+}
+.marks{
+	background: #E0DAD2;
+	padding: 10px;
+}
+.marks ul li{
+	float: left;
+	margin-left: 10px;
+}
+

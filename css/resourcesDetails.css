@@ -1,0 +1,57 @@
+#action{
+	margin-top: 20px;
+}
+
+#action a{
+	background: #E9E0C8;
+	margin-right: 20px;
+	border-radius: 5px;
+}
+#contextBrief{
+	margin-top: 40px;
+}
+#contextBrief p{
+	text-indent: 2em;
+	line-height: 1.8em;
+}
+#authorBrief{
+	margin-top: 40px;
+}
+#authorBrief p{
+	text-indent: 2em;
+	line-height: 1.8em;
+}
+#comments{
+	margin-top: 40px;
+}
+#comments .commentator{
+	width: 8%;
+	float: left;
+}
+#comments .comment{
+	margin-left: 2%;
+	width: 90%;
+	float: left;
+	min-height: 100px;
+	max-height: 300px;
+	overflow: hidden;
+}
+#comments .comment .title{
+	background: #D8C5B0;
+	padding: 4px 0 4px 10px;
+}
+.comment .context p{
+	text-indent: 2em;
+	line-height: 1.8em;
+	font-size: 1em;
+}
+
+#marks{
+	margin-top: 40px;
+}
+#marks .mark-item{
+	margin-right: 10px;
+	padding: 5px 10px;
+	background: #EEDBB3;
+	border-radius: 4px;
+}

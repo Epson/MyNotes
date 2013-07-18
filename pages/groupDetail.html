@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="utf-8">
+    <title>MyNotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyNotes">
+    <meta name="author" content="huanghuiquan">
+
+    <!-- styles -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">   <!-- common styles -->
+    <link href="../css/group.css" rel="stylesheet">   <!-- common styles -->
+
+    <!-- js -->
+    <script type="text/javascript" src="../javascript/lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../javascript/common/checkLogin.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="wrap">
+    <!-- Nav -->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <ul class="nav pull-right">
+                </ul>
+                <a class="brand" href="#">MyNotes</a> <!-- logo -->
+                <div class="nav-collapse collapse">
+                    <ul id="nav" class="nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="hotResources.html">热门资源</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div><!-- /Nav -->
+
+    <!-- placeholder for 60px -->
+    <div class="push"></div>
+
+    <!-- container -->
+    <div class="container" >
+        <div id="header">
+            <div class="pic">
+                <img src="../img/Jobs.jpg" alt="">
+            </div>
+            
+            <div class="title" id="group_operation">
+                <h2><span id="group_name"></span></h2>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <hr>
+        <div class="row">
+            <div id="leftSide" class="span8">
+                <div class="intro">
+                    <div class="createBy">
+                        <div class="date">
+                            组长： <span id="creator"></span>
+                        </div>
+                        <div class="date">
+                            创建于： <span id="create_time"></span>  
+                        </div>
+                    </div>
+                    <br />
+                    
+                    <div>小组简介：
+                        <div id="introduction"></div>
+                    </div>
+                </div> 
+            </div>
+            <div id="rightSide" class="span3 offset1">
+                <div class="createGroup">
+                    <div class="title">
+                        <a href="createGroup.html"> > 创建小组 +</a >
+                    </div>
+                </div>
+                <div class="groupMember">
+                    <div class="title" id="group_members">
+                        <a href="groupMember.html"> > 小组成员</a >
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="mygroup">
+                    <div class="title">
+                        <a href="#">> 我参加的小组</a>
+                    </div>
+                    <ul id="myGroups_list" class="unstyled">
+                        <!-- <li class="group-item">
+                            <div class="pic">
+                                <img src="../img/Jobs.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <a href="#">2B青年小组</a>
+                                    <span class="follow-num">100成员</span>
+                                </div>
+                                <p class="brief">2B青年，不仅仅是年龄上的青年还有心理上的青年，始终保持积极向上的心态活着。</p>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- /container -->
+    <div class="push_20"></div>
+    <div class="push"></div>
+</div>
+
+<!-- footer -->
+
+<div id="footer">
+    <div class="container">
+        <p>For Web2.0 Project <span class="muted">by FloatCloud Team</span></p>
+    </div>
+</div> <!-- /footer -->
+
+
+</body>
+</html>
+
+<!-- huang javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="../javascript/pages/groupDetail.js"></script>

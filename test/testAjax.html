@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="utf-8">
+    <title>MyNotes</title>
+</head>
+
+<body>
+    <input name="image" id="image" type="file">
+</body>
+</html>
+
+<script>
+
+    var fileObj = document.getElementById("image").files[0];
+    var form = new FormData();
+
+    form.append("avatar", fileObj);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("post", "testAjax.php", true);
+    xhr.onreadystatechange = function() {
+        if( xhr.readyState == 4 ) {
+            if (xhr.status==200) {// 200 = OK
+                console.log(xhr.responseText);
+            }
+        }
+    }
+    xhr.send(form);
+</script>
